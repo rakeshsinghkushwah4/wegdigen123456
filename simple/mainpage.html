@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8">
+    <!-- This is a very importanted line to make responsive website -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-primary  fixed-top " id="mynav">
+            <div class="container text-uppercase p-2">
+                <a class="navbar-brand font-weight-bold" href="#">rakesh</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto text-white text-uppercase">
+                        <li class="nav-item">
+                            <a class="nav-link " href="#">Home                                
+                           </a>
+                        </li>
+                        <li class="nav-item zero ">
+                            <a class="nav-link" href="#">Example                                                            
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </header>
+    <section class="main-page">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header header-style">
+                            <a class="toggle" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <h5>Python Introduction<span style="float: right;"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h5>
+                            </a>
+                        </div>
+                        <div class="card-body collapse" id="collapseExample">
+                            <h6>Rakesh</h6>
+
+                        </div>
+                        <div class="card-header header-style">
+                            <a class="toggle" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <h5>Python Introduction<span style="float: right;"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h5>
+                            </a>
+                        </div>
+                        <div class="card-body collapse" id="collapseExample1">
+                            <h6>Rakesh</h6>
+                        </div>
+                        <div class="card-header header-style">
+                            <a class="toggle" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <h5>Python Introduction<span style="float: right;"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h5>
+                            </a>
+                        </div>
+                        <div class="card-body collapse" id="collapseExample2">
+                            <h6>Rakesh</h6>
+                        </div>
+                        <div class="card-header header-style">
+                            <a class="toggle" data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample">
+                                <h5>Python Introduction<span style="float: right;"><i class="fa fa-angle-right" aria-hidden="true"></i></span></h5>
+                            </a>
+                        </div>
+                        <div class="card-body collapse" id="collapseExample3">
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+                            <h6>Rakesh</h6>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <div class="col-lg-8">
+                    <h1>Python Keywords and Identifiers</h1>
+                    <p>In this tutorial, you will learn about keywords (reserved words in Python) and identifiers (names given to variables, functions, etc.). Keywords are the reserved words in Python. We cannot use a keyword as a variable name, function
+                        name or any other identifier. They are used to define the syntax and structure of the Python language. In Python, keywords are case sensitive. There are 33 keywords in Python 3.7. This number can vary slightly over the course of
+                        time. All the keywords except True, False and None are in lowercase and they must be written as they are. The list of all the keywords is given below. False await else import pass None break except in raise True class finally is
+                        return and continue for lambda try as def from nonlocal while assert del global not with async elif if or yield Looking at all the keywords at once and trying to figure out what they mean might be overwhelming. If you want to have
+                        an overview, here is the complete list of all the keywords with examples. Python Identifiers An identifier is a name given to entities like class, functions, variables, etc. It helps to differentiate one entity from another. Rules
+                        for writing identifiers Identifiers can be a combination of letters in lowercase (a to z) or uppercase (A to Z) or digits (0 to 9) or an underscore _. Names like myClass, var_1 and print_this_to_screen, all are valid example. An
+                        identifier cannot start with a digit. 1variable is invalid, but variable1 is a valid name. Keywords cannot be used as identifiers. global = 1 Output File "
+                        <interactive input>", line 1 global = 1 ^ SyntaxError: invalid syntax We cannot use special symbols like !, @, #, $, % etc. in our identifier. a@ = 0 Output File "
+                            <interactive input>", line 1 a@ = 0 ^ SyntaxError: invalid syntax An identifier can be of any length. Things to Remember Python is a case-sensitive language. This means, Variable and variable are not the same. Always give the identifiers a name
+                                that makes sense. While c = 10 is a valid name, writing count = 10 would make more sense, and it would be easier to figure out what it represents when you look at your code after a long gap. Multiple words can be separated
+                                using an underscore, like this_is_a_long_variable.
+
+
+
+
+                    </p>
+                </div>
+    </section>
+
+    <section class="buttons">
+        <div class="container">
+            <div class="row">
+                <div class="sec " style="width: 100%;">
+                    <a href="#">Previous Class</a>
+                    <a style="float:right" href="#">Next Class</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="related">
+        <div class="container">
+            <h3>Related Tutorials</h3>
+            <div class="row row-sec">
+
+
+                <div class="col-lg-3 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 ">
+                    <a href="#">
+                        <div class="card">
+                            <div class="card_style">
+                                <p>Python library</p>
+                                <h6>Python issubclass()</h6>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 ">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 ">
+                    <div class="card">
+
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 ">
+                    <div class="card">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-body">
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 mt-2">
+                        <h1>RAKESH</h1>
+                        <div class="news-letter">
+                            <h6>Subscribe to Our newsletter</h6>
+                            <div class="input-group">
+                                <input type="text" class="form-control news-input" placeholder="Your Email">
+                                <div class="input-group-append">
+                                    <span class="input-group-text">Subscribe</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 mt-2 ">
+                        <div class="footer-title text-center">
+                            <h5>Tutorial</h5>
+                            <p><a href="#">Python</a></p>
+                            <p><a href="#">C</a></p>
+                            <p><a href="#">C++</a></p>
+                            <p><a href="#">JAVA</a></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-10 offset-lg-0 offset-md-0 offset-1 mt-2 ">
+                        <div class="footer-title text-center">
+                            <h5>Example</h5>
+                            <p><a href="#">Python Examples</a></p>
+                            <p><a href="#">C Examples</a></p>
+                            <p><a href="#">C++ Examples</a></p>
+                            <p><a href="#">JAVA Examples</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src=" https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js " integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin=" anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js "></script>
+
+    <script>
+        $(document).ready(function() {
+            $('.toggle').removeClass('show');
+            $('.toggle').click(function(e) {
+                if ($(this).hasClass('hide')) {
+                    $(this).removeClass('hide');
+                    $(this).addClass('show');
+                    console.log('hide');
+                } else if ($(this).hasClass('show')) {
+                    $(this).removeClass('show');
+                    $(this).addClass('hide');
+                    console.log('show');
+                } else {
+                    $(this).addClass('show')
+                    console.log('show else')
+                }
+
+            });
+
+        });
+        $(document).ready(function() {
+            $('ul.navbar-nav > li')
+                .click(function(e) {
+                    $('ul.navbar-nav > li')
+                        .removeClass('active');
+                    $(this).addClass('active');
+
+                });
+        });
+
+        var myNav = document.getElementById('mynav');
+        var defin = document.getElementById('heading-row');
+        window.onscroll = function() {
+            "use strict";
+            if (document.body.scrollTop >= 450 || document.documentElement.scrollTop >= 450) {
+                myNav.classList.add("nav-colored");
+                myNav.classList.remove("nav-transparent");
+            } else {
+                myNav.classList.add("nav-transparent");
+                myNav.classList.remove("nav-colored");
+            }
+            if (document.body.scrollTop >= 20 || document.documentElement.scrollTop >= 20) {
+
+                $('#defination').hide(50);
+                $("#heading-row").addClass("fixed");
+                $('#contains').addClass("contain-margin");
+            } else {
+
+                $('#defination').show(50);
+                $("#heading-row").removeClass("fixed");
+                $('#contains').removeClass("contain-margin");
+            }
+        };
+
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {
+            myFunction()
+        };
+
+        function myFunction() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("myBar").style.width = scrolled + "%";
+        }
+    </script>
+</body>
+
+
+
+</html>
